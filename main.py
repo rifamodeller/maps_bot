@@ -118,7 +118,7 @@ def yes(message):
                      reply_markup=types.ReplyKeyboardRemove())
     global information
     while True:
-        i = random.randint(0, 9)
+        i = random.randint(0, 30)
         if capitals_europe[i] not in usage_capitals:
             information = capitals_europe[i]
             usage_capitals.append(capitals_europe[i])
@@ -141,7 +141,7 @@ def yes1(message):
                      reply_markup=types.ReplyKeyboardRemove())
     global information
     while True:
-        i = random.randint(0, 9)
+        i = random.randint(0, 30)
         if capitals_europe[i] not in usage_capitals:
             information = cities_europe[i]
             usage_capitals.append(capitals_europe[i])
@@ -164,7 +164,7 @@ def yes2(message):
                      reply_markup=types.ReplyKeyboardRemove())
     global information
     while True:
-        i = random.randint(0, 9)
+        i = random.randint(0, 30)
         if capitals_europe[i] not in usage_capitals:
             information = capitals_europe[i]
             information_2 = cities_europe[i]
