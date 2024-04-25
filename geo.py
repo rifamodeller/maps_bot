@@ -1,7 +1,11 @@
 import requests
 import sys
+import os
 
-apikey = "40d1649f-0493-4b70-98ba-98533de7710b"
+from dotenv import load_dotenv
+
+load_dotenv()
+apikey = os.getenv('apikey')
 
 capitals_europe = ['Великобритания', 'Ирландия', 'Норвегия', 'Швеция', 'Швейцария', 'Монголия', 'Австрия', 'Италия',
                    'Германия', 'Испания']
