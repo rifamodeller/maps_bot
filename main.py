@@ -3,8 +3,12 @@ import telebot
 from geo import geocode, load_map
 import random
 import csv
+import os
+from dotenv import load_dotenv
 
-bot = telebot.TeleBot('6753251878:AAH5FRbpYaGDbC7FhysCcMRydZ3q2BpSKWQ')
+load_dotenv()
+botkey = os.getenv('botkey')
+bot = telebot.TeleBot(botkey)
 
 capitals_europe = []
 cities_europe = []
